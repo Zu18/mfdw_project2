@@ -12,8 +12,7 @@
   <header id="header">
     <div id="logo"><img src="{% static 'logo.jpg' %}"
                         alt=""/></div>
-    <div id="topbanner"><img src="{% static 'top_
-banner.png' %}" width="800" height="200" alt=""/></div>
+    <div id="topbanner"><img src="{% static 'top_banner.png' %}" width="800" height="200" alt=""/></div>
   </header>
   <aside id="leftsidebar">
     <nav id="nav">
@@ -25,8 +24,10 @@ banner.png' %}" width="800" height="200" alt=""/></div>
     </nav>
   </aside>
   <section id="main">
+    {% block content %}
     <h1>Welcome!</h1>
     <p>This is the site template</p>
+    {% endblock content %}
   </section>
   <footer id="footer">Copyright &copy; 2019 Meandco Web
     Design
